@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap');
 
 
-html{
+html {
     font-family: 'Inter', sans-serif;
     width: 100%;
-    
+    overflow-x: hidden;
 }
 
 section {
@@ -13,10 +13,16 @@ section {
     width: 100%;
 }
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Roboto Mono', monospace;
 }
 
+
+/* Landing page */
 .box {
     position: absolute;
     /*width: 715px;
@@ -24,12 +30,12 @@ h1,h2,h3,h4,h5{
     left: 49vw;
     top: 71vh;
     background: url(images/landing/box.png);
-    filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25)); 
-    z-index: 1; 
+    filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25));
+    z-index: 1;
     animation: slideinbottom 2.5s;
 }
 
-.handwpaper{
+.handwpaper {
     position: absolute;
     /*width: 730px;
     height: 722px;*/
@@ -38,7 +44,7 @@ h1,h2,h3,h4,h5{
     display: inline;
     float: left;
     margin-top: 100px;
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25)); 
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
     z-index: 2;
     animation: slideintop 4s;
 }
@@ -59,12 +65,12 @@ h1,h2,h3,h4,h5{
 }
 
 .landing-text {
-    margin: 50px; 
+    margin: 50px;
     position: relative;
     top: 30vh;
 }
 
-.thelasallian-text{
+.thelasallian-text {
     position: inline;
     font-size: 64px;
     font-weight: bold;
@@ -74,31 +80,48 @@ h1,h2,h3,h4,h5{
 .thelasallian-animation {
     overflow: hidden;
     white-space: nowrap;
-    margin: 0 auto; 
+    margin: 0 auto;
     animation:
         typing 3.5s steps(50, end),
         blink-caret .75s step-end 7;
     border-right: .15em solid white;
 }
 
-.thelasallian-sub{
+.thelasallian-sub {
     position: inline;
     font-size: 45px;
 }
 
 @keyframes typing {
-    from { width: 0}
-    to { width: 100%}
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
 @keyframes blink-caret {
-    from, to {border-color: transparent}
-    50% {border-color: white ;}
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white;
+    }
 }
 
 @keyframes fadein {
-    from {opacity: 0}
-    to {opacity: 1}
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes slideintop {
@@ -107,7 +130,16 @@ h1,h2,h3,h4,h5{
 }
 
 @keyframes slideinbottom {
-    from {top: 1920px}
-    to {bottom: 0px}
+    from {
+        top: 1920px
+    }
+
+    to {
+        bottom: 0px
+    }
 }
 
+/* For Articles */
+.tls-card {
+    animation: fadein 2s;
+}
