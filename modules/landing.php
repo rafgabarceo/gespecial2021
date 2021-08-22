@@ -11,7 +11,7 @@
             <div>
                 <img class="top" src="images/landing/top.png"/>
                 <img class="handwpaper" src="images/landing/handwpaper.png"/>
-                <img class="box" src="images/landing/fullbox.png"/>
+                <img class="box" src="images/landing/halfbox.png"/>
             </div>
         </div>
       </div>
