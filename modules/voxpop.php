@@ -2,6 +2,9 @@
 <html lang="en">
 
 <body>
+    <!--I cant seem to make this section fit to screen. Its like the containers overflow or something so there's always a scroll bar. 
+    I'm not sure if its due to a utility from Tailwind or im missing something. 
+    Maybe you can fix it-->
     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-5  max-h-screen">
         <div class="containervox m-auto">
             <h2 class="font-bold text-green-700 text-center text-3xl mb-4">VOX POPULI</h2>
