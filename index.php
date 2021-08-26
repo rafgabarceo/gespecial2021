@@ -16,7 +16,7 @@
         <?php include_once "modules/articles.php"?>
     </section>
     <section id="fasttalk" class="bg-gray-700 h-auto">
-        
+
         <?php include_once "modules/fastTalk.php"?>
     </section>
     <section id="daily-tallies">
@@ -33,5 +33,8 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <script src="/js/main.js"></script>
+<script>
+AOS.init();
+</script>
 
 </html>
