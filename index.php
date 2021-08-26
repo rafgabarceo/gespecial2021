@@ -15,8 +15,9 @@
     <section id="articles">
         <?php include_once "modules/articles.php"?>
     </section>
-    <section id="fasttalk">
-        <!---Images only. no need for include no?-->
+    <section id="fasttalk" class="bg-gray-700 h-auto">
+        
+        <?php include_once "modules/fastTalk.php"?>
     </section>
     <section id="daily-tallies">
         <!---Images only. no need for include no?-->
