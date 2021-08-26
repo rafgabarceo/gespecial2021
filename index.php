@@ -15,16 +15,19 @@
     <section id="articles">
         <?php include_once "modules/articles.php"?>
     </section>
-
+    <section id="fasttalk">
+        <!---Images only. no need for include no?-->
+    </section>
+    <section id="daily-tallies">
+        <!---Images only. no need for include no?-->
+    </section>
     <section id="headtohead">
         <?php include_once "modules/headtohead.php"?>
     </section>
     <section id="voxpop">
         <?php include_once "modules/voxpop.php"?>
     </section>
-    <section id="footer">
-        <?php include_once "modules/footer.php"?>
-    </section>
+    <?php include_once "modules/footer.php"?>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
