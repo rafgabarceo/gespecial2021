@@ -17,6 +17,7 @@
 <head>
     <title> The LaSallian | General Elections Special 2020 </title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/css.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -26,20 +27,17 @@
     <section id="landing" style="margin-bottom: 5vh;">
         <?php include_once "modules/landing.php" ?>
     </section>
-    <section id="articles">
+    <section id="articles" class="py-10">
         <?php include_once "modules/articles.php"?>
     </section>
-    <section Id="fasttalk" class="bg-gray-700 h-auto">
+    <section id="fasttalk" class="bg-gray-700 h-auto py-10">
 
         <?php include_once "modules/fastTalk.php"?>
     </section>
     <section id="daily-tallies">
         <!---Images only. no need for include no?-->
     </section>
-    <section id="headtohead">
-        <?php include_once "modules/headtohead.php"?>
-    </section>
-    <section id="voxpop">
+    <section id="voxpop" class="py-10">
         <?php include_once "modules/voxpop.php"?>
     </section>
     <?php include_once "modules/footer.php"?>
