@@ -14,8 +14,10 @@
                     Uzumaki,
                     Hotaru Takahashi,</span> & <span class="font-semibold text-gray-500">John Doe</span></p>
             <p class="text-gray-700 text-base text-center mt-1 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
+                For this year's General Elections, <span class="font-bold">The LaSallian's</span> photographers ask
+                students what type of
+                leader they
+                want to see the USG rally behind for the 2022 national elections.
             </p>
         </div>
         <div class="p-20 w-full">
