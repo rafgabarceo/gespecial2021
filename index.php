@@ -1,10 +1,15 @@
 <?php 
+    session_start();
+    require_once('../wp-blog-header.php');
 
-    if(@ include_once("../wp-includes/post.php") && include_once("../wp-includes/class-wp-query.php")){
-        echo "<script type='text/JavaScript'> console.log('The truth will set you free.') </script>";
+    $query = new WP_Query(array('tag' => 'on-the-line'));
+    
+    if(!isset($query)){
+        $_SESSION['articles'] = array(); // initialize array
     } else {
-        echo "<script type='text/JavaScript'> console.log('The truth will set you free.') </script>";
+        $_SESSION['articles'] = $query;
     }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +29,7 @@
     <section id="articles">
         <?php include_once "modules/articles.php"?>
     </section>
-    <section id="fasttalk" class="bg-gray-700 h-auto">
+    <section Id="fasttalk" class="bg-gray-700 h-auto">
 
         <?php include_once "modules/fastTalk.php"?>
     </section>
@@ -45,5 +50,4 @@
 <script>
 AOS.init();
 </script>
-
 </html>
