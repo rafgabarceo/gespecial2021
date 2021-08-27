@@ -1,3 +1,9 @@
+<?php 
+
+    if(@ include_once("../wp-includes/post.php") && include_once("../wp-includes/class-wp-query.php")){
+        echo "<script type='text/JavaScript'> console.log('The truth will set you free.') </script>";
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
