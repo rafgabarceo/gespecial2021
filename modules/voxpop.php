@@ -42,3 +42,31 @@
 </body>
 
 </html>
+<?php
+
+function createSlide($name, $image, $answer){
+    echo ' 
+    <div class="p-20 w-full mySlides fade">
+                <div class="bg-white rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1591848478625-de43268e6fb8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvdGVzdHxlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <div class="p-6">
+                        <p class="font-bold text-l mt-2 text-center text-black">Name</p>
+                    </div>
+                </div>
+            </div>
+            <div class="containervox m-auto mySlides fade">
+                <blockquote className="p-4 italic border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote">
+                    <div className="stylistic-quote-mark" aria-hidden="true">
+                        &ldquo;
+                    </div>
+                    <p className="mb-2"></p>
+                </blockquote>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>';
+
+}
+
+?>
