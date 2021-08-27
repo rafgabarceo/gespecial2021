@@ -32,9 +32,6 @@
     <section id="daily-tallies">
         <!---Images only. no need for include no?-->
     </section>
-    <section id="headtohead">
-        <?php include_once "modules/headtohead.php"?>
-    </section>
     <section id="voxpop" class="py-10">
         <?php include_once "modules/voxpop.php"?>
     </section>
