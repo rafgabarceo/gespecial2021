@@ -2,6 +2,8 @@
 
     if(@ include_once("../wp-includes/post.php") && include_once("../wp-includes/class-wp-query.php")){
         echo "<script type='text/JavaScript'> console.log('The truth will set you free.') </script>";
+    } else {
+        echo "<script type='text/JavaScript'> console.log('The truth will set you free.') </script>";
     }
 ?>
 <!DOCTYPE html>
@@ -9,7 +11,7 @@
 	<head>
 		<title> The LaSallian | General Elections Special 2020 </title>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/css.css">
+        <link rel="stylesheet" href="css/css.css">
 	</head>
     <body>
       <?php include_once "modules/header.php"?> 
@@ -36,7 +38,7 @@
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-<script src="/js/main.js"></script>
+<script src="js/main.js"></script>
 <script>
 AOS.init();
 </script>
