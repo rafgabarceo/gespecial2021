@@ -10,9 +10,8 @@
             <h2 class="font-bold text-green-700 text-center text-3xl mb-4">VOX POPULI</h2>
             <h1 class="font-bold text-center text-2xl mb-5">"What kind of leader do you want to see your USG rally
                 behind in the 2022 elections?"</h1>
-            <p class="font-normal text-l mt-2 text-center text-black">by <span
-                    class="font-semibold text-gray-500">Naruto
-                    Uzumaki,
+            <p class="font-normal text-l mt-2 text-center text-black">by <span class="font-semibold text-gray-500">Anton
+                    Trivino, Apa Reyta, Eunice Uy Tan, Lauren Sason, & Nelcze Zulueta
                     Hotaru Takahashi,</span> & <span class="font-semibold text-gray-500">John Doe</span></p>
             <p class="text-gray-700 text-base text-center mt-1 text-lg">
                 For this year's General Elections, <span class="font-bold">The LaSallian's</span> photographers ask
