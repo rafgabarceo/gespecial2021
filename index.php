@@ -21,10 +21,10 @@
     <section id="landing" style="margin-bottom: 5vh;">
         <?php include_once "modules/landing.php" ?>
     </section>
-    <section id="articles">
+    <section id="articles" class="py-10">
         <?php include_once "modules/articles.php"?>
     </section>
-    <section id="fasttalk" class="bg-gray-700 h-auto">
+    <section id="fasttalk" class="bg-gray-700 h-auto py-10">
 
         <?php include_once "modules/fastTalk.php"?>
     </section>
@@ -34,7 +34,7 @@
     <section id="headtohead">
         <?php include_once "modules/headtohead.php"?>
     </section>
-    <section id="voxpop">
+    <section id="voxpop" class="py-10">
         <?php include_once "modules/voxpop.php"?>
     </section>
     <?php include_once "modules/footer.php"?>
