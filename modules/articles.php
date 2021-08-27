@@ -20,17 +20,14 @@ Let Tailwind handle scaling gracefully.-->
 <body>
     <h1 class="pl-10 text-green-700 text-6xl thelasallian-animation">Articles</h1>
     <div class="p-10 grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-        <div class="grid-rows-5">
                 <?php 
                 // test query
                     $query = $_SESSION['articles'];
                     if($_SESSION["articles"]->have_posts()){
-                        echo '<ul>';
-
                         while($query->have_posts()){
                             $query->the_post();
                             $authors = array();
-                            $title = the_title();
+                            $title = get_the_title();
                             $link = wp_get_shortlink();
                             $thumburl = get_the_post_thumbnail_url();
                             $authStr;
@@ -49,7 +46,7 @@ Let Tailwind handle scaling gracefully.-->
                             if(is_null($authors[$i + 1]) && count($authors) > 1){
                                 $authStr = $authStr." & ".$authors[$i];
                             } else {
-                                $authStr = $authStr . $authors[$i];
+                                $authStr = $authStr ." ". $authors[$i];
                             }
                             }
                             createCard($title, $authStr, $link, $thumburl);
@@ -62,7 +59,6 @@ Let Tailwind handle scaling gracefully.-->
                     wp_reset_postdata();
 
                 ?>
-            </div>
     </div>
 </body>
 
@@ -70,9 +66,9 @@ Let Tailwind handle scaling gracefully.-->
 <?php 
     function createCard($title, $authors, $link, $img){
     echo "<div class='tls-card rounded shadow-lg hover:text-green-500 hover:shadow-2xl' data-aos='fade-right'>
-        <img class='w-full' src='".$img."' href='".$link."' target='_blank'>
+        <a href='$link'><img class='w-full' src='".$img."' target='_blank'>
         <div class='px-6 py-4'>
-            <div class='font-bold text-xl mb-2 text-center'>".$title."</div>
+            <div class='font-bold text-xl mb-2 text-center'>".$title."</div></a>
             <p class='font-normal text-l mb-1 text-center text-black'>by <span
                     class='font-semibold text-gray-500'>".$authors."</span></p>
         </div>

@@ -27,12 +27,12 @@
     <section id="landing" style="margin-bottom: 5vh;">
         <?php include_once "modules/landing.php" ?>
     </section>
-    <section id="articles" class="py-10">
+    <section id="articles" class="py-10 h-auto">
         <?php include_once "modules/articles.php"?>
     </section>
     <section id="fasttalk" class="bg-gray-700 h-auto py-10">
 
-        <?php include_once "modules/fastTalk.php"?>
+        <?php  // include_once "modules/fastTalk.php"?>
     </section>
     <section id="daily-tallies">
         <!---Images only. no need for include no?-->
