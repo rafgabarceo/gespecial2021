@@ -8,14 +8,17 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title> The LaSallian | General Elections Special 2020 </title>
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/css.css">
-	</head>
-    <body>
-      <?php include_once "modules/header.php"?> 
-      <section id="landing" style="margin-bottom: 5vh;">
+
+<head>
+    <title> The LaSallian | General Elections Special 2020 </title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <?php include_once "modules/header.php"?>
+    <section id="landing" style="margin-bottom: 5vh;">
         <?php include_once "modules/landing.php" ?>
     </section>
     <section id="articles">

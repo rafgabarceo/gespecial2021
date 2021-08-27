@@ -4,7 +4,7 @@
 <head>
     <title>General Elections Special 2021</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/css.css">
+    <link rel="stylesheet" href="css/css.css">
 </head>
 
 <body>

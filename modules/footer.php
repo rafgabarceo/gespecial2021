@@ -4,7 +4,7 @@
 <body>
     <footer>
         <div class="grid container h-auto justify-center p-5">
-            <img src="/images/TLS - Star 1.png" class="justify-self-center" height="60" width="60" alt="">
+            <img src="images/TLS - Star 1.png" class="justify-self-center" height="60" width="60" alt="">
             <hr class="m-5">
             <p class="text-center mb-5"><span class="font-bold"> The LaSallian</span> is the official student
                 publication of

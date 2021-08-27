@@ -3,7 +3,7 @@
 
 <body>
     <div class="tls-card rounded shadow-lg hover:text-green-500 hover:shadow-2xl" data-aos="fade-right">
-        <img class="w-full" src="/images/Solid_black.png">
+        <img class="w-full" src="images/Solid_black.png">
         <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2 text-center">Kicker: Article Title</div>
             <p class="font-normal text-l mb-1 text-center text-black">by <span
@@ -17,7 +17,7 @@
     </div>
 
     <div class="tls-single-card rounded shadow-lg hover:text-green-500 hover:shadow-2xl" data-aos="fade-right">
-        <img class="w-full" src="/images/Solid_black.png">
+        <img class="w-full" src="images/Solid_black.png">
         <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2 text-center">Kicker: Article Title</div>
             <p class="font-normal text-l mb-1 text-center text-black">by <span
