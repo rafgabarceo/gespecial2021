@@ -17,10 +17,11 @@ into a key-value array.
 Implement foreach so that multiple articleCards are displayed.
 
 Let Tailwind handle scaling gracefully.-->
+
 <body>
     <h1 class="pl-10 text-green-700 text-6xl thelasallian-animation">Articles</h1>
     <div class="p-10 grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-                <?php 
+        <?php 
                 // test query
                     $query = $_SESSION['articles'];
                     if($_SESSION["articles"]->have_posts()){
@@ -65,7 +66,7 @@ Let Tailwind handle scaling gracefully.-->
 </html>
 <?php 
     function createCard($title, $authors, $link, $img){
-    echo "<div class='tls-card rounded shadow-lg hover:text-green-500 hover:shadow-2xl' data-aos='fade-right'>
+    echo "<div class='tls-card rounded shadow-lg hover:text-green-500 hover:shadow-2xl h-auto' data-aos='fade-right'>
         <a href='$link'><img class='w-full' src='".$img."' target='_blank'>
         <div class='px-6 py-4'>
             <div class='font-bold text-xl mb-2 text-center'>".$title."</div></a>
