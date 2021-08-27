@@ -7,7 +7,7 @@
 	</head>
     <body>
       <?php include_once "modules/header.php"?> 
-      <section id="landing" class="flex items-center justify-center z-0">
+      <section id="landing" style="margin-bottom: 5vh;">
         <?php include_once "modules/landing.php" ?>
       </section>
       <section id="articles">
