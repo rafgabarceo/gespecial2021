@@ -16,9 +16,6 @@
                 <div class="hidden md:flex space-x-6">
                     <a href="#landing"
                         class="text-black-300 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                    <a href="#headtohead"
-                        class="text-black-300 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium">Head
-                        to Head</a>
                     <a href="#fasttalk"
                         class="text-black-300 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium">Fast
                         Talk</a>
@@ -30,9 +27,6 @@
                     <a href="#voxpop"
                         class="text-black-300 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium">Vox
                         Populi</a>
-                    <a href="#"
-                        class="text-black-300 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium">Daily
-                        Tallies</a>
                 </div>
                 <div class="lg:hidden md:hidden sm:flex items-center">
                     <img class="block lg:hidden h-8 w-auto" src="images\TLS - Star 1.png" alt="Workflow">
