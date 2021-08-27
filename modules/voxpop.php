@@ -8,7 +8,8 @@
     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-5  max-h-screen">
         <div class="containervox m-auto">
             <h2 class="font-bold text-green-700 text-center text-3xl mb-4">VOX POPULI</h2>
-            <h1 class="font-bold text-center text-4xl mb-5">"Question asked to the people?"</h1>
+            <h1 class="font-bold text-center text-2xl mb-5">"What kind of leader do you want to see your USG rally
+                behind in the 2022 elections?"</h1>
             <p class="font-normal text-l mt-2 text-center text-black">by <span
                     class="font-semibold text-gray-500">Naruto
                     Uzumaki,
