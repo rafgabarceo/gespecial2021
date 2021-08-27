@@ -8,10 +8,9 @@
     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-5  max-h-screen">
         <div class="containervox m-auto">
             <h2 class="font-bold text-green-700 text-center text-3xl mb-4">VOX POPULI</h2>
-            <h1 class="font-bold text-center text-4xl mb-5">"Question asked to the people?"</h1>
-            <p class="font-normal text-l mt-2 text-center text-black">by <span
-                    class="font-semibold text-gray-500">Naruto
-                    Uzumaki,
+            <h1 class="font-bold text-center text-2xl mb-5">General Elections 2021</h1>
+            <p class="font-normal text-l mt-2 text-center text-black">by <span class="font-semibold text-gray-500">Anton
+                    Trivino, Apa Reyta, Eunice Uy Tan, Lauren Sason, & Nelcze Zulueta
                     Hotaru Takahashi,</span> & <span class="font-semibold text-gray-500">John Doe</span></p>
             <p class="text-gray-700 text-base text-center mt-1 text-lg">
                 For this year's General Elections, <span class="font-bold">The LaSallian's</span> photographers ask
