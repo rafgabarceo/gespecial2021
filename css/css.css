@@ -17,8 +17,9 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-    font-family: 'Roboto Mono', monospace;
+h5,
+p {
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -39,7 +40,7 @@ h5 {
     position: absolute;
     /*width: 730px;
     height: 722px;*/
-   /* left: 707px;*/
+    /* left: 707px;*/
     top: -5vh;
     display: inline;
     float: left;
@@ -125,8 +126,13 @@ h5 {
 }
 
 @keyframes slideintop {
-    from {top: -1920px}
-    to {top: -5vh}
+    from {
+        top: -1920px
+    }
+
+    to {
+        top: -5vh
+    }
 }
 
 @keyframes slideinbottom {
@@ -142,4 +148,9 @@ h5 {
 /* For Articles */
 .tls-card {
     animation: fadein 2s;
+}
+
+
+svg:hover {
+    fill: #003300;
 }
