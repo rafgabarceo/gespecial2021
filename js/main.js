@@ -7,17 +7,25 @@ $(document).scroll(function () {
   }
 });
 
+// grab everything we need
+const btn = document.querySelector("button.mob-button");
+const menu = document.querySelector(".mobile-menu");
+
+// add event listeners
+btn.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});
+
+
 
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -25,6 +33,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1
   }
@@ -37,5 +46,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+  console.log(slideIndex);
   slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
