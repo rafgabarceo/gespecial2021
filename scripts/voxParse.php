@@ -1,12 +1,13 @@
 <?php 
-
+/*
     $dir = "../images/vox";
     $files = array_diff(scandir($dir), array('.', '..'));    
     natsort($files);
     $images = array_values($files); 
-    $responses = fopen("responses.txt", "r");
+   // $responses = fopen("responses.txt", "r");
     //print_r(parseText($responses));
     fclose($responses);
+    */
 ?>
 
 <?php 
