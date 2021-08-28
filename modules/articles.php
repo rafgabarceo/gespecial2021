@@ -39,11 +39,17 @@ Let Tailwind handle scaling gracefully.-->
                                 $full_name = $first_name.$last_name; 
                                 
                                 array_push($authors, $full_name);
+            
                             }
 
                            
 
                             for($i = 0; $i < count($authors); $i++){
+                            if(!($i > 1) && !($i == 0)){
+                                str_replace(" ", ", ", $authStr); 
+                                $authStr = $authStr.", ";
+                            }
+                            
                             if(is_null($authors[$i + 1]) && count($authors) > 1){
                                 $authStr = $authStr." & ".$authors[$i];
                             } else {
@@ -69,7 +75,7 @@ Let Tailwind handle scaling gracefully.-->
     echo "<div class='tls-card rounded-lg shadow-lg hover:text-green-500 hover:shadow-2xl h-auto' data-aos='fade-right'>
         <a href='$link' target='_blank'><img class='w-full rounded-lg' src='".$img."' target='_blank'>
         <div class='px-6 py-4'>
-            <div class='font-bold text-xl mb-2 text-center'>".$title."</div></a>
+            <div class='font-bold text-xl mb-2 text-center sm:text-3xl md:text-3xl'>".$title."</div></a>
             <p class='font-normal text-l mb-1 text-center text-black'>by <span
                     class='font-semibold text-gray-500'>".$authors."</span></p>
         </div>
