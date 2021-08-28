@@ -19,8 +19,8 @@ Implement foreach so that multiple articleCards are displayed.
 Let Tailwind handle scaling gracefully.-->
 
 <body>
-    <h1 class="pl-20 pb-10 text-green-700 text-6xl font-bold" data-aos="zoom-in">Articles</h1>
-    <div class="px-20 grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+    <h1 class="pl-20 pb-10 text-green-700 text-6xl font-bold sm:text-8xl" data-aos="zoom-in">Articles</h1>
+    <div class="px-20 grid lg:grid-cols-2 md:grid-cols-1 gap-5">
         <?php 
                 // test query
                     $query = $_SESSION['articles'];
@@ -66,8 +66,8 @@ Let Tailwind handle scaling gracefully.-->
 </html>
 <?php 
     function createCard($title, $authors, $link, $img){
-    echo "<div class='tls-card rounded shadow-lg hover:text-green-500 hover:shadow-2xl h-auto' data-aos='fade-right'>
-        <a href='$link' target='_blank'><img class='w-full' src='".$img."' target='_blank'>
+    echo "<div class='tls-card rounded-lg shadow-lg hover:text-green-500 hover:shadow-2xl h-auto' data-aos='fade-right'>
+        <a href='$link' target='_blank'><img class='w-full rounded-lg' src='".$img."' target='_blank'>
         <div class='px-6 py-4'>
             <div class='font-bold text-xl mb-2 text-center'>".$title."</div></a>
             <p class='font-normal text-l mb-1 text-center text-black'>by <span

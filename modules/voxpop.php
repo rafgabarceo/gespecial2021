@@ -18,14 +18,14 @@
             want to see the USG rally behind for the 2022 national elections.
         </p>
     </div>
-
-    <?php  
-                require_once("../scripts/voxParse.php");
-                $dir = "../images/vox/";
+    <div class="carousel-vox grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+        <?php  
+                require_once("scripts/voxParse.php");
+                $dir = "images/vox/";
                 $files = array_diff(scandir($dir), array('.', '..'));    
                 natsort($files);
                 $images = array_values($files); 
-                $responses = fopen("../scripts/responses.txt", "r");
+                $responses = fopen("scripts/responses.txt", "r");
                 //print_r(parseText($responses));
                 $parsedText = parseText($responses);
                 fclose($responses);
@@ -34,20 +34,20 @@
                     $answers = $parsedText['answers'] [$i];
                     $image = $images[$i];
                     createSlide($name, $image, $answers);
-                }
+                } 
         ?>
-
+    </div>
 </body>
 
 </html>
 <?php
 
 function createSlide($name, $image, $answer){
-    echo "<div class='carousel-vox'>
-    <div class='p-10 grid grid-cols-2'>
+    echo "<div class='p-10 grid'>
+    <div class='rounded-lg shadow-lg p-5' style='background-color: #0E2911;'>
         <div class='p-20 w-full'>
             <div class='bg-gray-50 rounded-lg shadow-lg'>
-                <img src='../images/vox/".$image."'>
+                <img data-lazy='../images/vox/".$image."' class='m-auto'>
                 <div class='p-6'>
                     <p class='font-bold text-l mt-2 text-center text-black'>".$name."
                     </p>
@@ -55,9 +55,10 @@ function createSlide($name, $image, $answer){
             </div>
         </div>
         <div class='containervox m-auto'>
-            <p class='mb-2 px-10 pl-5 text-lg'>".$answer."</p>
+            <p class='mb-2 px-10 text-lg text-white'>".$answer."</p>
         </div>
-    </div>";
+    </div>
+</div>";
 
 }
 

@@ -83,6 +83,18 @@ p {
     z-index: 3;
 }
 
+.thelasallian-text-mobile {
+    position: relative;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.thelasallian-sub-mobile {
+    position: relative;
+    font-weight: bold;
+    z-index: 3;
+}
+
 .thelasallian-animation {
     overflow: hidden;
     white-space: nowrap;
