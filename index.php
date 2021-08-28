@@ -37,8 +37,8 @@
     <section id="articles" class="py-28 h-auto">
         <?php include_once "modules/articles.php"?>
     </section>
-    <sections id="offices">
-
+    <sections id="offices" class="h-auto pt-16" style="background-color: #222222;">
+        <?php include_once("modules/offices.php"); ?>
     </sections>
     <section id="fasttalk" class="bg-gray-700 h-auto pt-16">
         <?php include_once "modules/fastTalk.php"?>
@@ -46,7 +46,7 @@
     <section id="voxpop" class="py-10 h-auto">
         <?php include_once "modules/voxpop.php"?>
     </section>
-    <section id="offenses">
+    <section id="offenses" class="py-10 h-auto bg-white">
 
     </section>
     <?php include_once "modules/footer.php"?>
