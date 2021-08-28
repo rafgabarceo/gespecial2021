@@ -18,23 +18,23 @@
             want to see the USG rally behind for the 2022 national elections.
         </p>
     </div>
-    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-5 max-h-screen slideshow-container">
+    <div class="carousel-vox grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
         <?php  
                 require_once("scripts/voxParse.php");
                 $dir = "images/vox/";
                 $files = array_diff(scandir($dir), array('.', '..'));    
                 natsort($files);
                 $images = array_values($files); 
-                $responses = fopen("responses.txt", "r");
+                $responses = fopen("scripts/responses.txt", "r");
                 //print_r(parseText($responses));
                 $parsedText = parseText($responses);
                 fclose($responses);
-                for($i = 0; $i < 20; $i++){
+                for($i = 0; $i < 19; $i++){
                     $name = $parsedText['names'][$i];
                     $answers = $parsedText['answers'] [$i];
                     $image = $images[$i];
-                    createSlide($name, $image, $answer);
-                }
+                    createSlide($name, $image, $answers);
+                } 
         ?>
     </div>
 </body>
@@ -43,24 +43,22 @@
 <?php
 
 function createSlide($name, $image, $answer){
-    echo "<div class='p-20 w-full mySlides fade'>
-                <div class='bg-white rounded-lg shadow-lg'>
-                    <img src='".$image." loading='lazy''>
-                    <div class='p-6'>
-                        <p class='font-bold text-l mt-2 text-center text-black'>'$name'</p>
-                    </div>
+    echo "<div class='p-10 grid'>
+    <div class='rounded-lg shadow-lg p-5' style='background-color: #0E2911;'>
+        <div class='p-20 w-full'>
+            <div class='bg-gray-50 rounded-lg shadow-lg'>
+                <img data-lazy='../images/vox/".$image."' class='m-auto'>
+                <div class='p-6'>
+                    <p class='font-bold text-l mt-2 text-center text-black'>".$name."
+                    </p>
                 </div>
             </div>
-            <div class='containervox m-auto mySlides fade'>
-                <blockquote className='p-4 italic border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote'>
-                    <div className='stylistic-quote-mark' aria-hidden='true'>
-                        &ldquo;
-                    </div>
-                    <p className='mb-2'>".$answer."</p>
-                </blockquote>
-            </div>
-            <a class='prev' onclick='plusSlides(-1)'>&#10094;</a>
-            <a class='next' onclick='plusSlides(1)'>&#10095;</a>";
+        </div>
+        <div class='containervox m-auto'>
+            <p class='mb-2 px-10 text-lg text-white'>".$answer."</p>
+        </div>
+    </div>
+</div>";
 
 }
 
