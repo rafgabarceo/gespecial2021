@@ -47,7 +47,7 @@
         <?php include_once "modules/voxpop.php"?>
     </section>
     <section id="offenses" class="py-10 h-auto bg-white">
-
+        <?php include_once "modules/offenses.php" ?>
     </section>
     <?php include_once "modules/footer.php"?>
 </body>
