@@ -4,9 +4,11 @@
     $files = array_diff(scandir($dir), array('.', '..'));    
     natsort($files);
     $images = array_values($files); 
+    print_r($images);
     $responses = fopen("responses.txt", "r");
-    //print_r(parseText($responses));
+    print_r(parseText($responses));
     fclose($responses);
+    
 ?>
 
 <?php 
