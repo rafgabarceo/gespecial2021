@@ -2,7 +2,6 @@
 <html lang="en">
 
 <body>
-    <?php include_once "/scripts/voxParse.php" ?>
     <!--I cant seem to make this section fit to screen. Its like the containers overflow or something so there's always a scroll bar. 
     I'm not sure if its due to a utility from Tailwind or im missing something. 
     Maybe you can fix it-->
@@ -21,11 +20,20 @@
     </div>
     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-5 max-h-screen slideshow-container">
         <?php  
+                require_once("scripts/voxParse.php");
+                $dir = "images/vox/";
+                $files = array_diff(scandir($dir), array('.', '..'));    
+                natsort($files);
+                $images = array_values($files); 
+                $responses = fopen("responses.txt", "r");
+                //print_r(parseText($responses));
+                $parsedText = parseText($responses);
+                fclose($responses);
                 for($i = 0; $i < 20; $i++){
-                    $name = $names[$i];
-                    $answers = $ans[$i];
+                    $name = $parsedText['names'][$i];
+                    $answers = $parsedText['answers'] [$i];
                     $image = $images[$i];
-                    createSlides($name, $image, $answer) ;
+                    createSlide($name, $image, $answer);
                 }
         ?>
     </div>
@@ -37,7 +45,7 @@
 function createSlide($name, $image, $answer){
     echo "<div class='p-20 w-full mySlides fade'>
                 <div class='bg-white rounded-lg shadow-lg'>
-                    <img src='".$image."'>
+                    <img src='".$image." loading='lazy''>
                     <div class='p-6'>
                         <p class='font-bold text-l mt-2 text-center text-black'>'$name'</p>
                     </div>
