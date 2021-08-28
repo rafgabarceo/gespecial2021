@@ -5,7 +5,7 @@
     natsort($files);
     $images = array_values($files); 
     $responses = fopen("responses.txt", "r");
-    //print_r(parseText($responses));
+    print_r(parseText($responses));
     fclose($responses);
 ?>
 
