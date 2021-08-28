@@ -9,7 +9,6 @@
     } else {
         $_SESSION['articles'] = $query;
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,11 +37,17 @@
     <section id="articles" class="py-28 h-auto">
         <?php include_once "modules/articles.php"?>
     </section>
+    <sections id="offices">
+
+    </sections>
     <section id="fasttalk" class="bg-gray-700 h-auto pt-16">
         <?php include_once "modules/fastTalk.php"?>
     </section>
     <section id="voxpop" class="py-10 h-auto">
         <?php include_once "modules/voxpop.php"?>
+    </section>
+    <section id="offenses">
+
     </section>
     <?php include_once "modules/footer.php"?>
 </body>
