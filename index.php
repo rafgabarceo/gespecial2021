@@ -15,7 +15,15 @@
 <html lang="en">
 
 <head>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta property="og:url" content="https://ge2021.thelasallian.com">
+    <meta property=" og:type" content="website">
+    <meta property="og:title" content="On the line: The LaSallian General Elections Special">
+    <meta property="og:description" content="The LaSallian presents its annual General Elections Special.">
+    <meta property="og:image" content="images/cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="On the line: The LaSallian General Elections Special">
+    <meta name="twitter:image" content="https://ge2021.thelasallian.com/images/cover.png">
+    <link href=" https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />

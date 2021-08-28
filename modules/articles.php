@@ -20,7 +20,7 @@ Let Tailwind handle scaling gracefully.-->
 
 <body>
     <h1 class="pl-20 pb-10 text-green-700 text-6xl font-bold sm:text-8xl" data-aos="zoom-in">Articles</h1>
-    <div class="px-20 grid lg:grid-cols-2 md:grid-cols-1 gap-5">
+    <div class="px-20 grid lg:grid-cols-3 md:grid-cols-1 gap-5">
         <?php 
                 // test query
                     $query = $_SESSION['articles'];
